@@ -1,0 +1,22 @@
+{
+  "name": "civicai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CivicAI - AI-assisted civic complaint management platform",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed.js",
+    "seed:reset": "node server/seed.js --reset-synthetic",
+    "test": "node --test tests/",
+    "check": "node --check server/index.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "multer": "^2.5.0"
+  }
+}
